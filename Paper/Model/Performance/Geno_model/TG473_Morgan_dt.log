@@ -1,0 +1,12 @@
+2025-03-27 04:00:00,680 - Best Model Parameters: {'criterion': 'entropy', 'max_depth': None, 'min_samples_leaf': 1, 'min_samples_split': 3}
+2025-03-27 04:00:00,681 - Validation F1 Score: 0.41118122367052184
+2025-03-27 04:00:00,681 - Validation Precision: 0.3804601518016188
+2025-03-27 04:00:00,681 - Validation Recall: 0.4482221569203643
+2025-03-27 04:00:00,681 - Validation Accuracy: 0.7264851186889987
+2025-03-27 04:00:00,681 - Validation AUC: 0.6285851423539651
+2025-03-27 04:00:00,878 - Test F1 Score: 0.41025641025641024
+2025-03-27 04:00:00,878 - Test Precision: 0.4444444444444444
+2025-03-27 04:00:00,878 - Test Recall: 0.38095238095238093
+2025-03-27 04:00:00,878 - Test Accuracy: 0.7148760330578512
+2025-03-27 04:00:00,878 - Test AUC: 0.6094595193757204
+2025-03-27 04:00:00,880 - Best model saved as /home2/jjy0605/Toxicity/0817_Genotoxicity/tg471/results/250327/TG473INPUT_desalt_wSMILES/best_model_Morgan_dt.joblib with F1 score: 0.41025641025641024

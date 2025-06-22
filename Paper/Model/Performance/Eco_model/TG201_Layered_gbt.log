@@ -1,0 +1,13 @@
+2025-04-24 11:33:59,369 - Best Model Parameters: {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 130}
+2025-04-24 11:33:59,369 - Validation F1 Score: 0.7808587973477652
+2025-04-24 11:33:59,370 - Validation Precision: 0.7609173367232456
+2025-04-24 11:33:59,370 - Validation Recall: 0.8019769949676492
+2025-04-24 11:33:59,370 - Validation Accuracy: 0.7200581395348837
+2025-04-24 11:33:59,370 - Validation AUC: 0.767782566322286
+2025-04-24 11:34:18,350 - Test F1 Score: 0.7828371278458844
+2025-04-24 11:34:18,351 - Test Precision: 0.7140575079872205
+2025-04-24 11:34:18,351 - Test Recall: 0.8662790697674418
+2025-04-24 11:34:18,351 - Test Accuracy: 0.7119628339140535
+2025-04-24 11:34:18,351 - Test AUC: 0.7823362543534433
+2025-04-24 11:34:18,359 - Best model saved as /home2/jjy0605/Toxicity/0817_Genotoxicity/tg471/results/250424/TG201_Descriptor_desalt/best_model_Layered_gbt.joblib with F1 score: 0.7828371278458844
+2025-04-24 11:34:18,360 - Scaler saved as /home2/jjy0605/Toxicity/0817_Genotoxicity/tg471/results/250424/TG201_Descriptor_desalt/scaler_Layered_gbt.joblib

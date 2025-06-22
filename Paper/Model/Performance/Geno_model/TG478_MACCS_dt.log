@@ -1,0 +1,12 @@
+2025-04-17 10:53:29,038 - Best Model Parameters: {'criterion': 'gini', 'max_depth': 5, 'min_samples_leaf': 1, 'min_samples_split': 2}
+2025-04-17 10:53:29,038 - Validation F1 Score: 0.4793650793650793
+2025-04-17 10:53:29,038 - Validation Precision: 0.42333333333333334
+2025-04-17 10:53:29,038 - Validation Recall: 0.6
+2025-04-17 10:53:29,038 - Validation Accuracy: 0.82
+2025-04-17 10:53:29,038 - Validation AUC: 0.7305555555555555
+2025-04-17 10:53:29,049 - Test F1 Score: 0.6666666666666666
+2025-04-17 10:53:29,049 - Test Precision: 0.5
+2025-04-17 10:53:29,049 - Test Recall: 1.0
+2025-04-17 10:53:29,049 - Test Accuracy: 0.9615384615384616
+2025-04-17 10:53:29,049 - Test AUC: 0.98
+2025-04-17 10:53:29,050 - Best model saved as /home2/jjy0605/Toxicity/0817_Genotoxicity/tg471/results/250417/TG478INPUT_desalt_wSMILES/best_model_MACCS_dt.joblib with F1 score: 0.6666666666666666

@@ -1,0 +1,13 @@
+2025-03-27 16:34:48,995 - Best Model Parameters: {'C': 30, 'penalty': 'l1', 'solver': 'liblinear'}
+2025-03-27 16:34:48,995 - Validation F1 Score: 0.4293506493506493
+2025-03-27 16:34:48,995 - Validation Precision: 0.35160631758424193
+2025-03-27 16:34:48,995 - Validation Recall: 0.5654545454545455
+2025-03-27 16:34:48,995 - Validation Accuracy: 0.784
+2025-03-27 16:34:48,995 - Validation AUC: 0.7168138111888112
+2025-03-27 16:34:49,116 - Test F1 Score: 0.34285714285714286
+2025-03-27 16:34:49,116 - Test Precision: 0.3157894736842105
+2025-03-27 16:34:49,116 - Test Recall: 0.375
+2025-03-27 16:34:49,116 - Test Accuracy: 0.7553191489361702
+2025-03-27 16:34:49,116 - Test AUC: 0.6362179487179488
+2025-03-27 16:34:49,119 - Best model saved as /home2/jjy0605/Toxicity/0817_Genotoxicity/tg471/results/250327/TG487_Descriptor_desalt/best_model_RDKit_logistic.joblib with F1 score: 0.34285714285714286
+2025-03-27 16:34:49,120 - Scaler saved as /home2/jjy0605/Toxicity/0817_Genotoxicity/tg471/results/250327/TG487_Descriptor_desalt/scaler_RDKit_logistic.joblib
