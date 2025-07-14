@@ -7,7 +7,7 @@
 
 **✅ Fully Reproducible** - All scripts tested and verified to work out-of-the-box on standard computing environments without requiring cluster access.
 
-This repository contains the code and data for reproducing toxicity prediction research based on OECD Test Guidelines (TG). The project implements multiple machine learning models using different molecular feature representations to predict various toxicity endpoints including genotoxicity, carcinogenicity, acute toxicity, developmental and reproductive toxicity (DART), and ecotoxicity.
+This repository contains the code and data for reproducing toxicity prediction research based on OECD Test Guidelines (TG). The project implements multiple machine learning models using different molecular feature representations to predict various toxicity endpoints i**Model Attribution**: All models, scalers, and code in this repository are original research contributions by the authors and are shared under MIT License to facilitate scientific reproducibility and collaboration. The pre-trained models in `published-models/Model/` are provided as supplementary materials to our published research for exact result reproduction.cluding genotoxicity, carcinogenicity, acute toxicity, developmental and reproductive toxicity (DART), and ecotoxicity.
 
 ## Table of Contents
 
@@ -330,23 +330,23 @@ python predict_toxicity.py \
     --model_type MF \
     --fingerprint_type RDKit \
     --input_file your_compounds.xlsx \
-    --model_path ../Paper/Model/Geno_model/TG471_best_model_RDKit_lr.joblib
+    --model_path ../published-models/Model/Geno_model/TG471_best_model_RDKit_lr.joblib
 
 # Molecular Descriptors Model  
 python predict_toxicity.py \
     --model_type MD \
     --fingerprint_type RDKit \
     --input_file your_compounds_with_descriptors.xlsx \
-    --model_path ../Paper/Model/Eco_model/TG202_best_model_RDKit_xgb.joblib \
-    --scaler_path ../Paper/Model/Eco_model/TG202_scaler_RDKit_xgb.joblib
+    --model_path ../published-models/Model/Eco_model/TG202D_best_model_RDKit_xgb.joblib \
+    --scaler_path ../published-models/Model/Eco_model/TG202D_scaler_RDKit_xgb.joblib
 
 # Combined Model
 python predict_toxicity.py \
     --model_type COMBINED \
     --fingerprint_type RDKit \
     --input_file your_compounds_with_descriptors.xlsx \
-    --model_path ../Paper/Model/DART_model/TG421D_best_model_RDKit_logistic.joblib \
-    --scaler_path ../Paper/Model/DART_model/TG421D_scaler_RDKit_logistic.joblib \
+    --model_path ../published-models/Model/DART_model/TG421D_best_model_RDKit_logistic.joblib \
+    --scaler_path ../published-models/Model/DART_model/TG421D_scaler_RDKit_logistic.joblib \
     --output_file my_predictions.xlsx
 ```
 
@@ -359,7 +359,7 @@ python predict_toxicity.py \
 python src/models/molecular_fingerprints/datacheck.py \
     --fingerprint_type RDKit \
     --file_path your_input_data.xlsx \
-    --model_filename ../Paper/Model/Geno_model/TG471_best_model_RDKit_lr.joblib
+    --model_filename ../published-models/Model/Geno_model/TG471_best_model_RDKit_lr.joblib
 ```
 
 **Input data format** (Excel file):
@@ -376,8 +376,8 @@ CCO                      | 0
 python src/models/molecular_descriptors/predict.py \
     --fingerprint_type RDKit \
     --file_path your_input_data.xlsx \
-    --model_filename ../Paper/Model/Eco_model/TG202_best_model_RDKit_xgb.joblib \
-    --scaler_filename ../Paper/Model/Eco_model/TG202_scaler_RDKit_xgb.joblib
+    --model_filename ../published-models/Model/Eco_model/TG202D_best_model_RDKit_xgb.joblib \
+    --scaler_filename ../published-models/Model/Eco_model/TG202D_scaler_RDKit_xgb.joblib
 ```
 
 **Input data format** (Excel file):
@@ -394,8 +394,8 @@ CCO            | 0        | 46.07 | -0.31| 20.2 | ...
 python src/models/combined/predict.py \
     --fingerprint_type RDKit \
     --file_path your_input_data.xlsx \
-    --model_filename ../Paper/Model/DART_model/TG421D_best_model_RDKit_logistic.joblib \
-    --scaler_filename ../Paper/Model/DART_model/TG421D_scaler_RDKit_logistic.joblib
+    --model_filename ../published-models/Model/DART_model/TG421D_best_model_RDKit_logistic.joblib \
+    --scaler_filename ../published-models/Model/DART_model/TG421D_scaler_RDKit_logistic.joblib
 ```
 
 #### Model Performance Repository
@@ -404,13 +404,13 @@ Access pre-trained models and performance metrics:
 
 | Endpoint | Best Model | Model Path |
 |----------|------------|------------|
-| **TG471 (Genotoxicity)** | RDKit+Logistic | `../Paper/Model/Geno_model/TG471_best_model_RDKit_lr.joblib` |
-| **TG473 (Genotoxicity)** | Morgan+DecisionTree | `../Paper/Model/Geno_model/TG473_best_model_Morgan_dt.joblib` |
-| **TG474 (Genotoxicity)** | MACCS+RandomForest | `../Paper/Model/Geno_model/TG474_best_model_MACCS_rf.joblib` |
-| **TG201 (Ecotoxicity)** | Layered+GBT | `../Paper/Model/Eco_model/TG201_best_model_Layered_gbt.joblib` |
-| **TG202 (Ecotoxicity)** | RDKit+XGB | `../Paper/Model/Eco_model/TG202_best_model_RDKit_xgb.joblib` |
-| **TG414 (DART)** | Morgan+Logistic | `../Paper/Model/DART_model/TG414_best_model_Morgan_logistic.joblib` |
-| **TG421D (DART)** | RDKit+Logistic | `../Paper/Model/DART_model/TG421D_best_model_RDKit_logistic.joblib` |
+| **TG471 (Genotoxicity)** | RDKit+Logistic | `../published-models/Model/Geno_model/TG471_best_model_RDKit_lr.joblib` |
+| **TG473 (Genotoxicity)** | Morgan+DecisionTree | `../published-models/Model/Geno_model/TG473_best_model_Morgan_dt.joblib` |
+| **TG474 (Genotoxicity)** | MACCS+RandomForest | `../published-models/Model/Geno_model/TG474_best_model_MACCS_rf.joblib` |
+| **TG201 (Ecotoxicity)** | Layered+GBT | `../published-models/Model/Eco_model/TG201D_best_model_Layered_gbt.joblib` |
+| **TG202 (Ecotoxicity)** | RDKit+XGB | `../published-models/Model/Eco_model/TG202D_best_model_RDKit_xgb.joblib` |
+| **TG414 (DART)** | Morgan+Logistic | `../published-models/Model/DART_model/TG414_best_model_Morgan_logistic.joblib` |
+| **TG421D (DART)** | RDKit+Logistic | `../published-models/Model/DART_model/TG421D_best_model_RDKit_logistic.joblib` |
 
 **Note**: Models with scalers (MD/Combined features) have corresponding scaler files in the same directory.
 
@@ -434,7 +434,7 @@ from src.utils.data_loader.mf_loader import load_fingerprint_data
 data = pd.read_excel('your_compounds.xlsx')
 
 # 2. Load pre-trained model
-model = joblib.load('../Paper/Model/Geno_model/TG471_best_model_RDKit_lr.joblib')
+model = joblib.load('../published-models/Model/Geno_model/TG471_best_model_RDKit_lr.joblib')
 
 # 3. Prepare features (fingerprints)
 X, _, smiles = load_fingerprint_data(
@@ -526,7 +526,7 @@ python predict_toxicity.py \
     --model_type MF \
     --fingerprint_type RDKit \
     --input_file example_input.xlsx \
-    --model_path ../Paper/Model/Geno_model/TG471_best_model_RDKit_lr.joblib
+    --model_path ../published-models/Model/Geno_model/TG471_best_model_RDKit_lr.joblib
 ```
 
 Expected output:
@@ -534,7 +534,7 @@ Expected output:
 OECD Toxicity Prediction - Using MF Model
 Fingerprint Type: RDKit
 Input File: example_input.xlsx
-Model Path: ../Paper/Model/Geno_model/TG471_best_model_RDKit_lr.joblib
+Model Path: ../published-models/Model/Geno_model/TG471_best_model_RDKit_lr.joblib
 --------------------------------------------------
 ✓ Model loaded successfully
 Loading and preparing data...
@@ -762,12 +762,12 @@ Results are logged during training and saved in JSON format.
 ### Pre-trained Models Repository
 
 **Note**: Pre-trained models are stored in a separate directory structure and can be accessed from:
-`/home2/jjy0605/Toxicity/0817_Genotoxicity/OECD-COMTOX/Paper/Model/`
+`/home2/jjy0605/Toxicity/0817_Genotoxicity/OECD-COMTOX/published-models/Model/`
 
 The pre-trained models are organized by toxicity endpoint:
 
 ```
-Paper/Model/
+published-models/Model/
 ├── Geno_model/                          # Genotoxicity models
 │   ├── Descriptor_Scaler/               # Scaler files for molecular descriptors
 │   ├── TG471_best_model_RDKit_lr.joblib
@@ -860,8 +860,8 @@ Each model directory contains:
 2. **Access pre-trained models**:
    ```bash
    # Models are located at:
-   # /home2/jjy0605/Toxicity/0817_Genotoxicity/OECD-COMTOX/Paper/Model/
-   ls /home2/jjy0605/Toxicity/0817_Genotoxicity/OECD-COMTOX/Paper/Model/
+   # /home2/jjy0605/Toxicity/0817_Genotoxicity/OECD-COMTOX/published-models/Model/
+   ls /home2/jjy0605/Toxicity/0817_Genotoxicity/OECD-COMTOX/published-models/Model/
    ```
 
 3. **Verify model integrity**:
@@ -898,7 +898,7 @@ If you use this code or models in your research, please cite our published work:
 }
 ```
 
-**Model Attribution**: The pre-trained models in `Paper/Model/` directory are derived from our published research and are provided under the same MIT License for reproducibility purposes.
+**Model Attribution**: The pre-trained models in `published-models/Model/` directory are derived from our published research and are provided under the same MIT License for reproducibility purposes.
 
 ## Acknowledgements
 
