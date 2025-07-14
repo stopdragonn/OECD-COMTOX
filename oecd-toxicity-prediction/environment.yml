@@ -1,0 +1,139 @@
+name: oecd-toxicity-pred
+channels:
+  - conda-forge
+  - rmg
+  - defaults
+
+dependencies:
+  - python=3.6.8
+  
+  # System libraries
+  - _libgcc_mutex=0.1
+  - _openmp_mutex=4.5
+  - bzip2=1.0.8
+  - ca-certificates=2024.8.30
+  - expat=2.6.3
+  - fontconfig=2.14.2
+  - freetype=2.12.1
+  - gettext=0.22.5
+  - glib=2.66.3
+  - icu=58.2
+  - jpeg=9e
+  - lcms2=2.12
+  - libblas=3.9.0
+  - libcblas=3.9.0
+  - libexpat=2.6.3
+  - libffi=3.2.1
+  - libgcc-ng=14.1.0
+  - libgfortran-ng=14.1.0
+  - libglib=2.66.3
+  - libgomp=14.1.0
+  - libiconv=1.17
+  - liblapack=3.9.0
+  - libopenblas=0.3.27
+  - libpng=1.6.43
+  - libstdcxx-ng=14.1.0
+  - libtiff=4.2.0
+  - libuuid=2.38.1
+  - libwebp-base=1.4.0
+  - libxcb=1.16
+  - libzlib=1.2.13
+  - ncurses=6.5
+  - openssl=1.1.1w
+  - pcre=8.45
+  - pixman=0.38.0
+  - pthread-stubs=0.4
+  - readline=7.0
+  - setuptools=58.0.4
+  - sqlite=3.28.0
+  - tk=8.6.13
+  - wheel=0.37.1
+  - xz=5.2.6
+  - zlib=1.2.13
+  - zstd=1.5.6
+  
+  # Core scientific computing
+  - numpy=1.19.5
+  - pandas=1.1.5
+  - python-dateutil=2.8.2
+  - pytz=2023.3.post1
+  - six=1.16.0
+  
+  # Chemistry
+  - rdkit=2020.03.3.0
+  - boost=1.68.0
+  - boost-cpp=1.68.0
+  - py-boost=1.67.0
+  
+  # Image processing
+  - pillow=8.1.2
+  - olefile=0.46
+  
+  # GUI support
+  - cairo=1.16.0
+  - glib=2.66.3
+  - xorg-kbproto=1.0.7
+  - xorg-libice=1.1.1
+  - xorg-libsm=1.2.4
+  - xorg-libx11=1.8.9
+  - xorg-libxau=1.0.11
+  - xorg-libxdmcp=1.1.3
+  - xorg-libxext=1.3.4
+  - xorg-libxrender=0.9.11
+  
+  # pip-only packages
+  - pip=21.3.1
+  - pip:
+    # Machine learning frameworks
+    - scikit-learn==0.24.2
+    - xgboost==1.5.2
+    - lightgbm>=3.2.0,<4.0.0
+    - imbalanced-learn==0.8.1
+    - imblearn==0.0
+    
+    # Data visualization
+    - matplotlib==3.3.4
+    - seaborn>=0.11.0,<0.13.0
+    - cycler==0.11.0
+    
+    # Data processing and I/O
+    - openpyxl==3.1.3
+    - joblib==1.1.1
+    - et-xmlfile==1.1.0
+    
+    # Scientific computing extensions
+    - scipy==1.5.4
+    - numba==0.53.1
+    - llvmlite==0.36.0
+    - threadpoolctl==3.1.0
+    
+    # Progress bar and utilities
+    - tqdm==4.64.1
+    - packaging==21.3
+    - pyparsing==3.1.4
+    - kiwisolver==1.3.1
+    
+    # Model interpretability
+    - shap==0.41.0
+    - slicer==0.0.7
+    - cloudpickle==2.2.1
+    
+    # Network and web utilities
+    - certifi==2024.8.30
+    - charset-normalizer==2.0.12
+    - idna==3.8
+    - requests==2.27.1
+    - urllib3==1.26.20
+    
+    # Python compatibility
+    - dataclasses==0.8
+    - importlib-metadata==4.8.3
+    - importlib-resources==5.4.0
+    - typing==3.7.4.3
+    - typing-extensions==4.1.1
+    - zipp==3.6.0
+    
+    # Optional: Jupyter notebook support (uncomment if needed)
+    # - jupyter>=1.0.0
+    # - ipykernel>=6.0.0
+    # - notebook>=6.0.0
