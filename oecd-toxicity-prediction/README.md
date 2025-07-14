@@ -718,7 +718,6 @@ oecd-toxicity-prediction/
     │       └── scalers/
     └── logs/
         └── batch_experiments/          # Batch experiment logs
-```
     └── models/
         ├── molecular_fingerprints/
         ├── molecular_descriptors/
@@ -881,7 +880,7 @@ Each model directory contains:
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](../LICENSE) file for details.
 
 **Model and Code Attribution**: All models, scalers, and code in this repository are original research contributions by the authors and are shared under MIT License to facilitate scientific reproducibility and collaboration. The pre-trained models in `Paper/Model/` are provided as supplementary materials to our published research for exact result reproduction.
 
