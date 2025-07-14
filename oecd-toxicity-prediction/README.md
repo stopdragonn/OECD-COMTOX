@@ -717,7 +717,7 @@ oecd-toxicity-prediction/
     │   └── combined/
     │       └── scalers/
     └── logs/
-        └── batch_experiments/          # Batch experiment logs
+    │   └── batch_experiments/          # Batch experiment logs
     └── models/
         ├── molecular_fingerprints/
         ├── molecular_descriptors/
