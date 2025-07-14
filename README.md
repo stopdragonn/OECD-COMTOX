@@ -102,63 +102,6 @@ python predict_toxicity.py \
 - Partial Least Squares Discriminant Analysis (PLS-DA)
 - LightGBM (LGB)
 
-## 📚 Documentation
-
-### For Users
-- **[Main Documentation](oecd-toxicity-prediction/README.md)**: Comprehensive usage guide
-- **Quick Start**: Get running in 5 minutes
-- **Model Usage Guide**: How to use pre-trained models
-- **Troubleshooting**: Common issues and solutions
-
-### For Developers
-- **API Documentation**: Detailed function references
-- **Contributing Guidelines**: How to contribute to the project
-- **Code Structure**: Understanding the codebase architecture
-
-## 🏆 Research Impact
-
-This repository supports published research in computational toxicology with:
-
-- **Reproducible Results**: All experiments can be replicated
-- **Benchmarked Performance**: Validated against standard datasets
-- **Model Interpretability**: SHAP analysis for transparency
-- **Regulatory Relevance**: Aligned with OECD Test Guidelines
-
-## 📈 Performance Highlights
-
-Our models achieve competitive performance across all toxicity endpoints:
-
-- **Genotoxicity**: F1 scores up to 0.85+ for multiple TG endpoints
-- **Ecotoxicity**: Robust prediction across aquatic species (TG 201-211)
-- **DART**: Reliable developmental toxicity assessment
-- **Carcinogenicity**: High-precision cancer risk prediction
-- **Acute Toxicity**: Multiple exposure route coverage
-
-## 🔬 Research Applications
-
-- **Drug Discovery**: Early-stage toxicity screening
-- **Chemical Safety**: Regulatory compliance assessment
-- **Environmental Risk**: Ecological impact evaluation
-- **Academic Research**: Computational toxicology studies
-- **Method Development**: ML algorithm benchmarking
-
-## 🌐 Related Resources
-
-- **Research Group**: [Environmental Health Informatics Lab](http://ehi.uos.ac.kr)
-- **University**: University of Seoul, Department of Environmental Engineering
-- **Publications**: See [Citation](#citation) section for related papers
-
-## 🤝 Contributing
-
-We welcome contributions from the computational toxicology community:
-
-1. **Issues**: Report bugs or request features
-2. **Pull Requests**: Submit improvements or new models
-3. **Datasets**: Share new OECD TG datasets
-4. **Models**: Contribute validated model implementations
-
-See our [Contributing Guidelines](CONTRIBUTING.md) for details.
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -194,7 +137,7 @@ Special thanks to Soyoung Cho (Department of Statistics, University of Seoul) fo
 
 - **Primary Contact**: [jinhchoi@uos.ac.kr](mailto:jinhchoi@uos.ac.kr)
 - **GitHub**: [@stopdragonn](https://github.com/stopdragonn)
-- **Lab Website**: [Environmental Health Informatics Lab](http://ehi.uos.ac.kr)
+- **Lab Website**: [Environmental Systems Toxicology Lab](https://est.uos.ac.kr/)
 
 ---
 
