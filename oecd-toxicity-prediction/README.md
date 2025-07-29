@@ -889,8 +889,8 @@ This project is licensed under the MIT License - see the [LICENSE](../LICENSE) f
 If you use this code or models in your research, please cite our published work:
 
 ```bibtex
-@article{Kim_oecd_toxicity_2024,
-  title={OECD Test Guidelines-Based Toxicity Prediction using Machine Learning: A Comprehensive Study of Molecular Features and Model Performance},
+@article{Kim_oecd_toxicity_2025,
+  title={Part II. Systematic development of machine learning models for predicting human and ecotoxicity from in vivo OECD test guideline data},
   author={Donghyeon Kim, Jiyong Jeong, Siyeol Ahn and Jinhee Choi},
   journal={Computational Toxicology},
   year={2025},
