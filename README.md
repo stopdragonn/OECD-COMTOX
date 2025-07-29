@@ -120,18 +120,14 @@ If you use this repository in your research, please cite our work:
   author={Donghyeon Kim, Jiyong Jeong, Siyeol Ahn and Jinhee Choi},
   journal={Computational Toxicology},
   year={2025},
-  note={Please update with actual publication details when available}
+  doi={10.1016/j.comtox.2025.100369},
+  url={https://doi.org/10.1016/j.comtox.2025.100369}
 }
 ```
 
 ## 🙏 Acknowledgements
 
-This work was supported by:
-- Korea Environmental Industry & Technology Institute (KEITI)
-- 'Core Technology Development Project for Environmental Diseases Prevention and Management' (2021003310005)
-- 2025 Chemical Substance Safety Management Cooperation Course (Ministry of Environment)
-
-Special thanks to Soyoung Cho (Department of Statistics, University of Seoul) for statistical methodology assistance.
+This work was supported by Korea Environmental Industry & Technology Institute (KEITI) through 'Core Technology Development Project for Environmental Diseases Prevention and Management' (2021003310005) and by the Specialized Graduate Program for Chemical Substance Safety Management funded by the Ministry of Environment. The authors acknowledge the Urban Big Data and AI Institute of the University of Seoul supercomputing resources (http://ubai.uos.ac.kr) made available for conducting the research reported in this paper. The authors gratefully acknowledge Soyoung Cho (Department of Statistics, University of Seoul) for her valuable assistance with the research methodologies employed in this study.
 
 ## 📞 Contact
 
