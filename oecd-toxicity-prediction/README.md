@@ -903,7 +903,7 @@ If you use this code or models in your research, please cite our published work:
 
 ## Acknowledgements
 
-This work was supported by Korea Environmental Industry & Technology Institute (KEITI) through 'Core Technology Development Project for Environmental Diseases Prevention and Management' (2021003310005) and the 2025 Chemical Substance Safety Management Cooperation Course through the funded by the Ministry of Environment. The authors gratefully acknowledge Soyoung Cho (Department of Statistics, University of Seoul) for her valuable assistance with the research methodologies employed in this study.
+This work was supported by Korea Environmental Industry & Technology Institute (KEITI) through 'Core Technology Development Project for Environmental Diseases Prevention and Management' (2021003310005) and by the Specialized Graduate Program for Chemical Substance Safety Management funded by the Ministry of Environment. The authors acknowledge the Urban Big Data and AI Institute of the University of Seoul supercomputing resources (http://ubai.uos.ac.kr) made available for conducting the research reported in this paper. The authors gratefully acknowledge Soyoung Cho (Department of Statistics, University of Seoul) for her valuable assistance with the research methodologies employed in this study.
 
 ## Contact
 
