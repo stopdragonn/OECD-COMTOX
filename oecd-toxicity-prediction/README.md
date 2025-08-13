@@ -894,7 +894,8 @@ If you use this code or models in your research, please cite our published work:
   author={Donghyeon Kim, Jiyong Jeong, Siyeol Ahn and Jinhee Choi},
   journal={Computational Toxicology},
   year={2025},
-  note={Please update with actual publication details when available}
+  doi={10.1016/j.comtox.2025.100369},
+  url={https://doi.org/10.1016/j.comtox.2025.100369}
 }
 ```
 
