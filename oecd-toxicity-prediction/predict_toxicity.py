@@ -85,9 +85,9 @@ def load_and_prepare_data(input_file, fingerprint_type, model_type):
     df_valid = df.iloc[valid_indices].copy()
     
     if model_type == 'MF':
-        # Generate molecular fingerprints
-        smiles2fing = Smiles2Fing()
-        X = smiles2fing.get_fingerprints(df_valid['SMILES'].tolist(), fingerprint_type)
+        # Generate molecular fingerprints using the Smiles2Fing function
+        ms_none_idx, fingerprints_df = Smiles2Fing(df_valid['SMILES'].tolist(), fingerprint_type)
+        X = fingerprints_df.values
         return X, df_valid, valid_indices
     
     elif model_type in ['MD', 'COMBINED']:
@@ -101,8 +101,8 @@ def load_and_prepare_data(input_file, fingerprint_type, model_type):
             X = df_valid[descriptor_cols].values
         else:  # COMBINED
             # Generate fingerprints and concatenate with descriptors
-            smiles2fing = Smiles2Fing()
-            fingerprints = smiles2fing.get_fingerprints(df_valid['SMILES'].tolist(), fingerprint_type)
+            ms_none_idx, fingerprints_df = Smiles2Fing(df_valid['SMILES'].tolist(), fingerprint_type)
+            fingerprints = fingerprints_df.values
             descriptors = df_valid[descriptor_cols].values
             X = np.concatenate([fingerprints, descriptors], axis=1)
         
@@ -154,7 +154,8 @@ def predict_toxicity(args):
             X = scaler.transform(X)
         elif args.model_type == 'COMBINED':
             # Only scale the descriptor part (not fingerprints)
-            n_fingerprints = len(Smiles2Fing().get_fingerprints(['CCO'], args.fingerprint_type)[0])
+            _, fp_df = Smiles2Fing(['CCO'], args.fingerprint_type)
+            n_fingerprints = fp_df.shape[1]
             X_descriptors = X[:, n_fingerprints:]
             X_descriptors_scaled = scaler.transform(X_descriptors)
             X = np.concatenate([X[:, :n_fingerprints], X_descriptors_scaled], axis=1)
